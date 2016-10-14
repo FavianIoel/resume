@@ -1,0 +1,17 @@
+body,input{
+	background-color: #272822;
+	color: #fff;
+}
+input{
+	border: 0px;
+	width: 70%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+span{
+	color: #66D9EF;
+}
+p{
+	margin:5px;
+}

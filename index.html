@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Terminal-CV</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body ng-controller="terminalController">
+<div class="old">
+	<p ng-repeat="log in logs track by $index"><span>FavianIoel@Poputa:~$</span> {{log}}</p>
+</div>
+	<form ng-submit="dothis()">
+		<div class="type">
+			<p><span>FavianIoel@Poputa:~$</span> <input ng-model="read" type="text" name="read" class="alo" autofocus autocomplete='off' ></p>
+		</div>
+	</form>
+</body>
+</html>
