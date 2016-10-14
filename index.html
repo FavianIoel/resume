@@ -10,7 +10,11 @@
 </head>
 <body ng-app="resumeApp" ng-controller="terminalController">
 <div class="old">
-	<p ng-repeat="log in logs track by $index"><span>FavianIoel@Poputa:~$</span> {{log}}</p>
+	<div ng-repeat="arr in array track by $index">
+		<p class="command"><span>FavianIoel@Poputa:~$</span> {{arr[1]}}</p>
+		<p class="output">{{arr[0]}}</p>
+	</div>
+
 </div>
 	<form ng-submit="dothis()">
 		<div class="type">
