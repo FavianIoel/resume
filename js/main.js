@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module("resumeApp", [])
+    angular.module("resumeApp", ['ngRoute'])
 .controller('terminalController', function($scope) {
     $scope.logs = ['run `help` for avilble commands'];
     $scope.dothis = function(){
