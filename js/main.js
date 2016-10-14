@@ -1,7 +1,5 @@
-(function () {
-    'use strict';
-    angular.module("resumeApp", ['ngRoute'])
-.controller('terminalController', function($scope) {
+var app = angular.module('resumeApp', []);
+app.controller('terminalController', function($scope) {
     $scope.logs = ['run `help` for avilble commands'];
     $scope.dothis = function(){
         if ($scope.read == 'about') {
@@ -39,6 +37,5 @@
             $scope.read = '';
         }
     };
-})
-})();
+});
 
