@@ -1,4 +1,6 @@
-angular.module('resumeApp', [])
+(function () {
+    'use strict';
+    angular.module("resumeApp", [])
 .controller('terminalController',['$scope', function($scope) {
     $scope.logs = ['run `help` for avilble commands'];
     $scope.dothis = function(){
@@ -37,6 +39,6 @@ angular.module('resumeApp', [])
             $scope.read = '';
         }
     };
-}]);
-
+}])
+})();
 
