@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="resumeApp" ng-controller="terminalController">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +9,22 @@
 	<script src="vendors/angular.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </head>
-<body ng-app="resumeApp" ng-controller="terminalController">
-<div class="old">
-	<div ng-repeat="arr in array track by $index">
-		<p class="command"><span>FavianIoel@Poputa:~$</span> {{arr[1]}}</p>
-		<div class="output" ng-bind-html="renderHtml(arr[0])"></div>
+<body focus-input>
+	<div class="old">
+		<div ng-repeat="arr in array track by $index">
+			<p class="command"><span>FavianIoel@Poputa:~$</span> {{arr[1]}}</p>
+			<div class="output" ng-bind-html="renderHtml(arr[0])"></div>
+		</div>
 	</div>
-
-</div>
-	   <form ng-submit="dothis()">
+	<form ng-submit="dothis()">
 		<div class="type">
-			<p><span>FavianIoel@Poputa:~$</span> <input ng-model="read" type="text" name="read" class="alo" autofocus autocomplete='off' ></p>
+			<p>
+				<span>FavianIoel@Poputa:~$</span>
+				<input ng-model="read" type="text" name="read" class="alo" autofocus autocomplete='off'>
+			</p>
 		</div>
 	</form>
+	<h5 class="nume">FAVIAN-IOEL POPUTA</h5>
+	<h5 class="port"><i>terminalResume</i></h5>
 </body>
 </html>
