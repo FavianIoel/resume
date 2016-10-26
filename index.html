@@ -12,7 +12,7 @@
 <body focus-input>
 	<div class="old">
 		<div ng-repeat="arr in array track by $index">
-			<p class="command"><span>FavianIoel@Poputa:~$</span> {{arr[1]}}</p>
+			<p class="command"><span>FavianIoel@Poputa:~$</span> <i ng-bind="arr[1]"></i></p>
 			<div class="output" ng-bind-html="renderHtml(arr[0])"></div>
 		</div>
 	</div>
@@ -20,7 +20,9 @@
 		<div class="type">
 			<p>
 				<span>FavianIoel@Poputa:~$</span>
-				<input ng-model="read" type="text" name="read" class="alo" autofocus autocomplete='off'>
+				<label>
+					<input ng-model="read" type="text" name="read" class="alo" autofocus autocomplete='off'>
+				</label>
 			</p>
 		</div>
 	</form>

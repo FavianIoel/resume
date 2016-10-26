@@ -1,8 +1,10 @@
 (function(){
     'use strict';
-    angular.module("resumeApp",[]).directive('focusInput', function($timeout) {
+    //noinspection JSUnresolvedFunction
+    angular.module("resumeApp",[])
+        .directive('focusInput', function($timeout) {
       return {
-        link: function(scope, element, attrs) {
+        link: function(scope, element) {
           element.bind('click', function() {
             $timeout(function() {
               element.parent().parent().find('input')[0].focus();
@@ -52,7 +54,7 @@
     
     var about="";
     about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join Endava because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
-    
+
 
     var experience="";
     experience += "<p><strong>Group Five Software<\/strong><br>";
@@ -62,7 +64,7 @@
     experience += "                <p>Here I managed too work on a project from it's beginnings and I learned a lot from it .<\/p>";
 
     var education="";
-    education += "<p><strong>FSEGA<\/strong - Facultatea de Stiinte Economice si Gestiunea Afacerilor, <strong>Universitatea Babes Bolyai<\/strong>, Cluj- Napoca.<\/p>";
+    education += "<p><strong>FSEGA<\/strong> - Facultatea de Stiinte Economice si Gestiunea Afacerilor, <strong>Universitatea Babes Bolyai<\/strong>, Cluj- Napoca.<\/p>";
     education += "<p>Information Technologies and Economics , Bachelor (3)<\/p>";
     education += "<p>October 2016 - Present<\/p>";
     education += "";
@@ -90,7 +92,7 @@
             $scope.array.push([skills,$scope.read]);
             $scope.read = '';
         }else if($scope.read.toLowerCase() == 'clear'){
-            $scope.array = []
+            $scope.array = [];
             $scope.array.push(['',$scope.read]);
             $scope.read = '';
         }else if($scope.read.toLowerCase() == ''){
@@ -117,6 +119,7 @@
     };
     $scope.renderHtml = function(html_code)
     {
+        //noinspection JSUnresolvedFunction
         return $sce.trustAsHtml(html_code);
     };
 }]);
