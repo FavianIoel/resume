@@ -52,6 +52,8 @@
     skills += " <li>ASP.NET<\/li>";
     skills += "<\/ul>";
     
+    var about="";
+    about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join your team because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
 
     var about="<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join Endava because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
 
