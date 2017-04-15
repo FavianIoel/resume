@@ -59,7 +59,7 @@
     var experience="";
     experience += "<p><strong>Group Five Software<\/strong><br>";
     experience += "                <i>Junior PHP Developer<\/i><br>";
-    experience += "                March 2016 – Present (8 months)<\/p>";
+    experience += "                Febr 2016 – Present<\/p>";
     experience += "                <p>Group Five Software is a small company that develops big projects.<\/p>";
     experience += "                <p>Here I managed too work on a project from it's beginnings and I learned a lot from it .<\/p>";
 
@@ -110,7 +110,7 @@
         }
         else if($scope.read.toLowerCase() == 'download'){
             $scope.array.push(['',$scope.read]);
-            window.open('ioel.pdf', '_blank', 'fullscreen=yes');
+            window.open('CurriculumVitae.pdf', '_blank', 'fullscreen=yes');
             $scope.read = '';
         }else {
             $scope.array.push(['<p>'+$scope.read+availble,$scope.read]);
