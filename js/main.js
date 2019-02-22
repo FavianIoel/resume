@@ -53,13 +53,16 @@
     skills += "<\/ul>";
     
     var about="";
-    about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join your team because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
-
-
+    about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p>";
     var experience="";
+    experience += "<p><strong>SoftVision<\/strong><br>";
+    experience += "                <i>Junior SW Engineer<\/i><br>";
+    experience += "                Febr 2019 – Present<\/p>";
+    experience += "";
+    experience += "";
     experience += "<p><strong>Group Five Software<\/strong><br>";
     experience += "                <i>Junior PHP Developer<\/i><br>";
-    experience += "                Febr 2016 – Present<\/p>";
+    experience += "                Febr 2016 – Aug 2017<\/p>";
     experience += "                <p>Group Five Software is a small company that develops big projects.<\/p>";
     experience += "                <p>Here I managed too work on a project from it's beginnings and I learned a lot from it .<\/p>";
 
