@@ -53,13 +53,24 @@
     skills += "<\/ul>";
     
     var about="";
+<<<<<<< HEAD
     about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join your team because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
 
     var about="<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p><p>I want to join Endava because I know it's a great place to enrich my knowledge, grow as a programmer and extend my area of expertize.<\/p>";
 
     var experience="<p><strong>Group Five Software<\/strong><br>";
+=======
+    about += "<p>I can say I'm a very passionate guy ,<br>I love to learn new technology and share my knowledge with my friends.<br>I really think I still have more to learn and I think I will never abide at what I already know.<\/p>";
+    var experience="";
+    experience += "<p><strong>SoftVision<\/strong><br>";
+    experience += "                <i>Junior SW Engineer<\/i><br>";
+    experience += "                Febr 2019 – Present<\/p>";
+    experience += "";
+    experience += "";
+    experience += "<p><strong>Group Five Software<\/strong><br>";
+>>>>>>> 865bcf8b10c304e8b1b385174c80aeee9a71179c
     experience += "                <i>Junior PHP Developer<\/i><br>";
-    experience += "                March 2016 – Present (8 months)<\/p>";
+    experience += "                Febr 2016 – Aug 2017<\/p>";
     experience += "                <p>Group Five Software is a small company that develops big projects.<\/p>";
     experience += "                <p>Here I managed too work on a project from it's beginnings and I learned a lot from it .<\/p>";
 
@@ -125,6 +136,7 @@
             
         }else if($scope.read.toLowerCase() == 'download'){
             $scope.array.push(['',$scope.read]);
+<<<<<<< HEAD
             window.open('ioel.pdf', '_blank', 'fullscreen=yes');
             history_commands.push($scope.read);
             $scope.read = '';
@@ -136,6 +148,9 @@
             }
             $scope.array.push([rett==''?no_history:rett,$scope.read]);
             history_commands.push($scope.read);
+=======
+            window.open('CurriculumVitae.pdf', '_blank', 'fullscreen=yes');
+>>>>>>> 865bcf8b10c304e8b1b385174c80aeee9a71179c
             $scope.read = '';
             
         }else {
